@@ -1,7 +1,7 @@
-name: Workflow error
+name: YAML error
 on: push
 jobs:
   run:
-    run-on: ubuntu-latest
-    steps:
-      - run: date
+    runs-on: ubuntu-latest
+      steps:                          # インデントが2文字ズレている！
+      - run: echo "YAML Syntax Error"
